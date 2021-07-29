@@ -1,0 +1,162 @@
+html {
+    scroll-behavior:smooth;
+  }
+
+body{
+    background-image: url(https://image.freepik.com/free-photo/white-brick-wall_1194-7432.jpg);
+    background-repeat: repeat;
+}
+
+#topnav{
+
+        overflow: hidden;
+        background-color: #333;
+        font-family: "Gowun Batang", sans-serif;
+        float: none;
+}
+
+#topnav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#topnav li{
+    display: inline-block;
+}
+
+#topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    width: 200px;
+}
+#topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+#tribute-link{
+    text-align: center;
+}
+
+h1{
+    font-size: 55px;
+}
+
+#main{
+    background-image: url(https://image.freepik.com/free-photo/white-brick-wall_1194-7432.jpg);
+    background-repeat: repeat;
+}
+
+#title{
+   text-align: center;
+   font-family: "Trirong", sans-serif;
+   margin: 0;
+   font-size: 80px;
+}
+
+h2{
+    text-align: center;
+    font-family: "Gowun Batang", sans-serif;
+    margin: 20px;
+}
+
+#img-div{
+    max-width: auto;
+    height: auto;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#image {
+    max-width: auto;
+    height: auto;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#img-caption{
+    text-align: center;
+    font-family: "Gowun Batang", sans-serif;
+}
+
+#tribute-info{
+    margin: 15px 200px 200px;
+    margin-bottom: 50px;
+    font-family: "Comfortaa", sans-serif;
+    line-height: 2;
+}
+
+.heading{
+    text-align: left;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 50px ;
+    margin: 0 ;
+    
+}
+
+ul li{
+    font-size: 20px ;
+}
+
+#companies{
+    text-align:center;
+}
+
+#companies-container{
+    display: flex; 
+    justify-content: space-around;
+    animation: scrolling 80s linear infinite;
+    animation-direction: alternate;
+
+}
+
+#companies-container:hover {
+    animation-play-state: paused
+
+}
+
+#dishes-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+
+#dishes{
+    text-align: center ;
+}
+
+#tribute-link{
+    text-decoration: none;
+    background-color: #ddd;
+    color: black;
+    border: double;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+#tribute-link:hover{
+    background-color:black;
+    color: #ddd;
+
+}
+
+@keyframes scrolling {
+    25% {transform: translate(80vw);}
+    100% {transform: translate(-180vw);}
+}
