@@ -158,5 +158,5 @@ ul li{
 
 @keyframes scrolling {
     25% {transform: translate(80vw);}
-    100% {transform: translate(-180vw);}
+    25%% {transform: translate(-180vw);}
 }
