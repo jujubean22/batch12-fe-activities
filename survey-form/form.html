@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Nanum Gothic|Comfortaa|Playfair Display|Patua One|Zilla Slab|">
+    <link rel="shortcut icon" href="assets/meal3.png">
+
+    <title>"No More Hangry!"</title>
+    
+</head>
+<body>
+    <div id="application-form">
+            <!--1: As a user, I want to see a title with id="title" in H1 sized text.-->
+            <div id="food-pictures">
+                <h1 id="title">"No More Hangry!"</h1>
+                     <!-- 2: As a user, I want to see a short explanation with id="description" in P sized text. -->
+                    <p> Tired of being hungry and angry at the same time? We're all that you're looking for!</p>
+     
+                     <div id="slideshow">
+
+                            <img src= "assets/meal3.png"/>
+                            <img src="" alt="">
+                        
+                     </div>
+    
+                    
+                   <p> Never skip a meal when you sign up with us!</p>
+    </p>  
+    </div>
+     <!-- 3: As a user, I want to see a form with id="survey-form".-->
+<div id="survey-form">
+
+    <h2>Sign up now!</h2>
+    <h4> Your hassle-free meals awaits you.</h4>
+
+<form action="signees.html" method="GET">
+
+    <!-- 10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label -->
+    <!--11: For the name, email, and number input fields, I want to see placeholder text that gives me a description or instructions for each field.-->
+    <!-- 4: As a user, I want to be required to enter my name in a field with id="name". (Inside form element)-->
+   
+    <div>
+      <label for="name-label">First Name:</label> <br>
+    <input type="text" name="name" id="name-label" placeholder="Enter you first name" required> 
+    </div>
+
+    <div>
+    <label for="last-name"> Last Name:</label> <br>
+    <input type="text" name="last-name" id="last-name" placeholder="Enter you last name" required> 
+    </div>
+
+        <!-- 5: As a user, I want to be required to enter an email in a field with id="email". (Inside form element)-->
+        <!-- 6: As a user, I want to see a validation error if I enter an email that is not formatted correctly.-->
+    <div>
+    <label for="email-label">Email:</label> <br>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+   
+    </div>
+
+    <div>
+        <div> <label for="phone-label">Phone Number:</label> <br>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="Enter you phone number" pattern="^(09|\+639)\d{9}$" title="Must be a valid phone number!" required>
+            <label for="number-label">Age:</label>
+            <input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="100" pattern="^(150|[1-9][0-9]?)$" title="Person  ages from 1-150!" required>
+    
+        </div>    
+
+    </div>
+
+    <!-- 7: As a user, I should be able to enter a number in a field with id="number".-->
+    <!--8: As a user, if I enter non-numbers in the number input, I want to see an HTML5 validation error.-->
+    <!-- 9: As a user, if I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
+
+
+    
+
+    <div> <label for="address">Address:</label><br>
+        <input type="text" name="age" id="address" placeholder="House No., Street, Brgy, City"  required>
+ 
+        <label for="dropdown">Region:</label>
+        <!-- 12: Inside the form element, I want a select an option from a dropdown that has a corresponding id="dropdown". -->
+        <select name="region" id="dropdown" required>
+            <option value="">Region</option>
+            <option value="NCR">NCR</option>
+            <option value="CAR">CAR</option>
+            <option value="Region 1">Region 1</option>
+            <option value="Region 2">Region 2</option>
+            <option value="Region 3">Region 3</option>
+            <option value="Region 4A">Region 4A</option>
+            <option value="Region 4B">Region 4B</option>
+            <option value="Region 5">Region 5</option>
+            <option value="Region 6">Region 6</option>
+            <option value="Region 7">Region 7</option>
+            <option value="Region 8">Region 8</option>
+            <option value="Region 9">Region 9</option>
+            <option value="Region 10">Region 10</option>
+            <option value="Region 11">Region 11</option>
+            <option value="Region 12">Region 12</option>
+            <option value="Region 13">Region 13</option>
+            <option value="BARMM">BARMM</option>
+        </select>
+    </div>
+    <div id="allergies"><label> Allergies: </label>
+        <!-- 14: Inside the form element, I want to select several fields from a series of checkboxes, each of which must have a value attribute. -->
+    <ul class="checkbox"> 
+
+            <input type="checkbox" id="soy" name="soy" value="soy">
+            <label for="soy"> Soy </label>
+            
+            
+            <input type="checkbox" id="dairy" name="dairy" value="dairy"> 
+            <label for="dairy"> Dairy</label>
+            
+            <input type="checkbox" id="nuts" name="nuts" value="nuts">
+            <label for="nuts"> Nuts</label>
+            
+            <input type="checkbox" id="seafood" name="seafood" value="seafood">
+            <label for="seafood"> Seafood</label>
+
+            <input type="checkbox" id="wheat" name="wheat" value="wheat">
+            <label for="wheat"> Wheat</label>
+           
+            <input type="checkbox" id="eggs" name="eggs" value="eggs">
+            <label for="eggs"> Eggs</label>
+            
+            
+
+    </div>
+    <div> <label> Portion Size:</label>
+        <!-- 13: Inside the form element, I want to select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+        <ul>
+    <label>
+        <input type="radio" name="portion-size" value="single" required>
+        Single
+      </label>
+    
+      <label>
+        <input type="radio" name="portion-size" value="double">
+        Double
+      </label>
+    
+      <label>
+        <input type="radio" name="portion-size" value="family-size">
+        Family-size
+      </label>
+    </ul>
+    </div>
+
+    <label for="notes"> Notes:</label>
+    <!-- 15: Inside the form element, I want to see a text-area at the end for additional comments. -->
+            <input type="textbox" name="notes" id="notes"> <br><br>
+
+<!-- 16: Inside the form element, I want to see a button with id="submit" to submit all my inputs. -->
+ <button id="submit" type="submit">Submit</button>
+</form>
+
+</div>
+
+</div>
+    
+    
+</body>
+</html>
+<!-- -->

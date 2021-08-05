@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+    background-image: url(/survey-form/assets/background-image.jpg);
+}
+
+*{
+    color:  #545a2b;
+}
+
+
+#application-form{
+    min-width: 1000px;
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    border-radius: 1000px;
+}
+
+#food-pictures{
+    background-color: #FFB26B;
+    padding: 3%;
+    min-width: 40%;
+    max-width: 40%;
+    height: auto;
+} 
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+h1{
+    font-family: "Pacifico", sans-serif;
+    font-size: 250%;
+    text-align: center;
+}
+
+p{
+    font-family: "Zilla Slab", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1;
+}
+
+h2{
+    font-family: "Patua One", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+h4{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+#survey-form{
+    background-color: #FFD56B;
+    width: 60%;
+    float: left;
+    height: 60%;
+    padding: 20px;
+    border: 2px #939B62;
+
+}
+
+label{
+    font-family: "Nanum Gothic", sans-serif ;
+    line-height: 2;
+    padding-bottom: 5px;
+    
+}
+
+input{
+    padding: .5em;
+    border: none;
+    border-bottom: 1px solid #545a2b;
+    font-family: "Comfortaa" , sans-serif;
+    background-color: transparent;
+}
+
+
+form input[type=text] {
+    width: 95%;
+}
+form input[type=email] {
+    width: 95%;
+}
+ #address{
+    width: 50%;
+} 
+
+#dropdown{
+    border: 1px solid #545a2b;
+    font-family: "Comfortaa" , sans-serif;
+    width: 30%;
+    padding:.5em;
+    border-radius: 50px 50px 50px;
+}
+#dropdown:hover{
+    background-color: teal;
+    color: white;
+}
+
+form input[type=tel] {
+    width: 40%;
+}
+form input[type=number] {
+    width: 44%;
+}
+
+form input[type=textbox] {
+    width:85%;
+}
+#submit{
+    width: 50%;
+    padding: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Nanum Gothic", sans-serif;
+    margin-left: 25%;
+    border-radius: 50px 50px 50px;
+
+}
+
+form input[type=checkbox]:hover {
+   background-color: #ccc;
+    cursor:pointer;
+}
+
+#submit:hover{
+    color: white;
+    border-radius: 15px 50px 15px;
+    cursor:pointer;
+    background-color: teal;
+}
+
+.thank-you{
+    font-size: 50px;
+
+}
+
+#signees{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
