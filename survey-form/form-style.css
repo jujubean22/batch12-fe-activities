@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth; 
     background-color: orange;
-    background-image: url(/survey-form/assets-form/background-image1.jpg);
+    background-image: url("./assets-form/background-image1.jpg");
     background-size: cover;
 }
 
