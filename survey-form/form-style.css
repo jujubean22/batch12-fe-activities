@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth;
-    background-image: url(/survey-form/assets/background-image.jpg);
-}
+    background-color: orange;
+    background-image: url(/survey-form/assets/background-image2.jpg)}
 
 *{
     color:  #545a2b;
