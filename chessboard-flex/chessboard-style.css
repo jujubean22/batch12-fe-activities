@@ -1,0 +1,39 @@
+
+body{
+    height: 93vh;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#parent{
+    border: 10px black;
+    max-width: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }   
+.child{
+    width: 40vw;
+    height: 40vw;
+    border: 10px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.white,.black{
+    width: 12.5%;
+    height:12.5%;
+    font-size: 125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.black{
+    background-color: gray;
+}
+.white{
+    background-color: white;
+}
