@@ -17,6 +17,10 @@ h1{
 }
 
 .projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -29,8 +33,4 @@ h3{
     font-size: 25px;
     text-align: center;
     padding: 25px;
-    display: inline-block;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
 }
