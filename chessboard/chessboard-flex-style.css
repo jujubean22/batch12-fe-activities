@@ -17,7 +17,7 @@ body{
 .child{
     width: 40vw;
     height: 40vw;
-    border: 10px solid black;
+    border: 5px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -26,7 +26,7 @@ body{
 .white,.black{
     width: 12.5%;
     height:12.5%;
-    font-size: 125%;
+    font-size: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;

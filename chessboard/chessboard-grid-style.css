@@ -1,0 +1,36 @@
+
+body{
+    height: 100vh;
+    background-color: #64C9CF;
+    display: grid;
+    align-items: center;
+    justify-items: center;  
+}
+#parent{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+ } 
+.child{
+    height: 40vw;
+    width: 40vw;
+    border: 5px solid #DF711B;
+    display: grid;
+    grid-template-columns: repeat(8,12.5%);
+    grid-template-rows: repeat(8,12.5%);
+    justify-content: center;
+    border-radius: 10px;
+}
+.white,.black{
+    font-size: 5vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+.black{
+    background-color: #FDE49C;
+}
+.white{
+    background-color: #FFB740;
+}
