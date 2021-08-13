@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+#blade-video-background{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -2;
+    opacity: .4;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 120vh;
+}
+
+
+
+#header{
+    font-family: "Fox Grotesque", sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 500px) {
+    #header {
+    padding: 5px;
+    font-size: 2px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    background-color: transparent; } }
+
+#header ul{
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+    
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.nav-link > a{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    align-content: flex-end;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-link > a {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        justify-content: center;
+        align-content: flex-end; } }
+
+#logo{
+    display: flex;
+}
+
+
+#header-img{
+    height: 5vh;
+    width: auto;
+    justify-content: flex-start;
+}
+
+
+
+.blade-home{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.blade1{
+    font-family: "Fox Grotesque", sans-serif;
+    letter-spacing: 10vh;
+    font-size: 20rem;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 800px) {
+    .blade1 {
+        letter-spacing: 5.5vh;
+        font-size: 2.5rem;
+        font-weight: 100; } }
+
+#home{
+    height: 70%;
+    display: grid;
+    justify-self: center;
+}
+
+#about{
+    background-image: url(./assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+    display: flex;
+    height: 50vw;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20vh;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #about{
+        display: flex;
+        height: 100vw;
+        width: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10vh;
+    }
+
+}
+
+#sushi{
+    border: white 10px solid;
+    height: auto;
+    width: 70vh;
+    border-radius: 30px;
+
+}
+
+.sushi-info{
+    height: 40vh;
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family:"Gowun Batang", sans-serif; 
+    line-height: 3vw;
+    font-size: 3vw;
+    color: white;
+    padding: 5vh;
+}
+
+@media only screen and (max-width: 800px) {
+#sushi{
+    border: white 2px solid;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 30px; } 
+
+.sushi-info{
+    height: 40vh;
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family:"Gowun Batang", sans-serif; 
+    line-height: 3vw;
+    font-size: 2.5vw;
+    color: white;
+    padding: 5vh;}
+}
+
+.reviews2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+#reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+    width: 130vh;
+    margin: 5px;
+}
+
+#review{
+    border: white 2px solid;
+    margin: auto;
+    height: 40vh;
+    width: 40vh;
+    margin: 5px;
+
+}
+
+.header{
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+    margin: 2vh;
+    padding: 2vh;
+    font-size: 3vh;
+}
+.reviewer{
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    line-height: 5vh;
+}
+.r-t{
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.r-c{
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    text-align: justify;
+    padding: 5vh;margin: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    #reviews{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 100vh;
+        width: 50vh;
+        margin: 10px;
+    }
+    
+    #review{
+        border: white 2px solid;
+        margin: auto;
+        height: 30vh;
+        width: 20vh;
+        margin: 5px;
+    
+    }
+    
+    .header{
+        font-family: "Playfair Display", sans-serif;
+        text-align: center;
+        margin: 1vh;
+        padding: 1vh;
+        font-size: 2vh;
+    }
+    .reviewer{
+        text-align: center;
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 500;
+        line-height: 5vh;
+        font-size: 2vh;
+    }
+    .r-t{
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1vh;
+    }
+    
+    .r-c{
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 500;
+        text-align: justify;
+        font-size: .75vh;
+        padding: 5vh;
+        margin: 5px;
+    }} 
+ #newsletter{
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     margin-bottom: 30px;
+ }   
+
+#sign-up{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: "Trirong", sans-serif;
+    text-transform: uppercase;
+}
+#form{
+    border: 10px black solid;
+    height: 7vh;
+    width: 40vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#form>input{
+    width:50vw;
+    font-family: "Trirong", sans-serif;
+}   
+#submit{
+    width:20vw;
+    font-family: "Trirong", sans-serif;
+
+}
+
+@media only screen and (max-width: 800px) {
+    #newsletter{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }   
+   
+   #sign-up{
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       margin-bottom: 30px;
+       font-family: "Trirong", sans-serif;
+       text-transform: uppercase;
+       font-size: 1vh;
+   }
+   #form{
+       border: 2px black solid;
+       height: 5vh;
+       width: 70vw;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+   }
+   
+   #form>input{
+       width:50vw;
+       font-family: "Trirong", sans-serif;
+       font-size: 1vh;
+   }   
+   #submit{
+       width:20vw;
+       font-family: "Trirong", sans-serif;
+        font-size: 1vh;
+   }
+}
