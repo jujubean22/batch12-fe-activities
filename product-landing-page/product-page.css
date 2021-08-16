@@ -26,6 +26,8 @@ html{
     flex-direction: row; 
     justify-content: space-around;
     background-color: black;
+    position: fixed;
+    width: 100%;
 }
 @media only screen and (max-width: 500px) {
     #header {
