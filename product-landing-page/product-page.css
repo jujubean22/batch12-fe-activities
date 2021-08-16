@@ -17,9 +17,6 @@ html{
     width: 100vw;
     height: 120vh;
 }
-
-
-
 #header{
     font-family: "Fox Grotesque", sans-serif;
     padding: 5px;
@@ -28,44 +25,53 @@ html{
     display: flex;
     flex-direction: row; 
     justify-content: space-around;
-    background-color: transparent;
+    background-color: black;
 }
-
 @media only screen and (max-width: 500px) {
     #header {
     padding: 5px;
-    font-size: 2px;
+    font-size: .5px;
     font-weight: 100;
-    display: flex;
-    flex-direction: row; 
+    display: grid;
     justify-content: space-around;
-    background-color: transparent; } }
+    background-color: black; }
+
+    #Logo{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 90vw;
+    }
+
+}
 
 #header ul{
     display: flex;
     flex-direction: row; 
-    list-style: none;
-    
+    list-style: none;   
 }
 .nav-link{
     display: flex;
     justify-content: center;
     align-content: center;
 }
-
-
 .nav-link > a{
-    color: black;
+    color: white;
     text-align: center;
     padding: 10px;
     text-decoration: none;
     font-size: 25px;
     align-content: flex-end;
 }
-
+.nav-link a:hover{
+    color: black;
+    background-color: white;
+    letter-spacing: .10em;
+    border-radius: 50px;
+}
 @media only screen and (max-width: 800px) {
     .nav-link > a {
-        color: black;
+        color: white;
         text-align: center;
         text-decoration: none;
         font-size: 18px;
@@ -75,16 +81,11 @@ html{
 #logo{
     display: flex;
 }
-
-
 #header-img{
     height: 5vh;
     width: auto;
     justify-content: flex-start;
 }
-
-
-
 .blade-home{
     height: 100vh;
     width: 100vw;
@@ -93,11 +94,42 @@ html{
     justify-content: center;
     align-items: center;
 }
-
 .blade1{
     font-family: "Fox Grotesque", sans-serif;
     letter-spacing: 10vh;
     font-size: 20rem;
+    font-weight: 100;
+    cursor:default;
+}
+.right{
+	left:auto;
+	right:0px;
+    background: black;
+    animation: thread2 8s infinite;
+    border: 0;
+    height: 5px;
+    top:2.8em;
+}
+
+.left{
+    animation: thread2 8s infinite;
+    border: 0;
+    height: 5px;
+    background: black;
+}
+@keyframes thread2 {
+    0%   { width: 100%; }
+    50% { width: 100%; }
+    80% { width: 0px;}
+    100%{ width:100%;}
+}
+
+#blade-tagline{
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Fox Grotesque", sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
     font-weight: 100;
 }
 
@@ -105,7 +137,20 @@ html{
     .blade1 {
         letter-spacing: 5.5vh;
         font-size: 2.5rem;
-        font-weight: 100; } }
+        font-weight: 100; } 
+    
+    #blade-tagline{
+        display: flex;
+        justify-content: flex-end;
+        font-family: "Fox Grotesque", sans-serif;
+        letter-spacing: 3px;
+        font-size: .25em;
+        font-weight: 100;}
+    .right,.left{
+        height: 2px;
+    }
+
+    }
 
 #home{
     height: 70%;
@@ -198,7 +243,11 @@ html{
     height: 40vh;
     width: 40vh;
     margin: 5px;
+}
 
+.review:hover::after{
+content: url(./assets/blade\ Logo.png);
+display: block;
 }
 
 .header{
@@ -246,9 +295,9 @@ html{
         height: 30vh;
         width: 20vh;
         margin: 5px;
-    
     }
     
+
     .header{
         font-family: "Playfair Display", sans-serif;
         text-align: center;
@@ -278,33 +327,51 @@ html{
         padding: 5vh;
         margin: 5px;
     }} 
+
+.sign-container{
+    background-image: url(./assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+
+}
+
  #newsletter{
-     display: flex;
+     display: grid;
      text-align: center;
      justify-content: center;
      margin-bottom: 30px;
+     align-items: center;
+     color:white;
  }   
 
 #sign-up{
-    display: flex;
+    display: grid;
     text-align: center;
     justify-content: center;
     margin-bottom: 30px;
     font-family: "Trirong", sans-serif;
     text-transform: uppercase;
+    border: 10px white solid;
+    width: 50vw;
+    border-radius: 50px;
+    color:white;
 }
 #form{
-    border: 10px black solid;
-    height: 7vh;
+    height: 5vh;
     width: 40vw;
     display: flex;
     text-align: center;
     justify-content: center;
+    border-radius: 5px;
 }
 
 #form>input{
     width:50vw;
     font-family: "Trirong", sans-serif;
+    border-radius:5px;
 }   
 #submit{
     width:20vw;
@@ -318,16 +385,21 @@ html{
         text-align: center;
         justify-content: center;
         margin-bottom: 30px;
+        align-content: center;
     }   
    
    #sign-up{
-       display: flex;
+       display: grid;
        text-align: center;
        justify-content: center;
+       align-items: center;
        margin-bottom: 30px;
        font-family: "Trirong", sans-serif;
        text-transform: uppercase;
        font-size: 1vh;
+       width: 45vh;
+       border-radius: 0mm;
+       border: none;
    }
    #form{
        border: 2px black solid;
@@ -342,10 +414,12 @@ html{
        width:50vw;
        font-family: "Trirong", sans-serif;
        font-size: 1vh;
+       height: 3vh;
    }   
    #submit{
        width:20vw;
        font-family: "Trirong", sans-serif;
         font-size: 1vh;
+        height: 3vh;
    }
 }
