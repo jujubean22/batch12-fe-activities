@@ -47,6 +47,24 @@ html{
 
 }
 
+@media only screen and (max-width: 250px) {
+    #header {
+    padding: 5px;
+    font-size: .2px;
+    font-weight: 100;
+    display: grid;
+    justify-content: space-around;
+    background-color: black; }
+
+    #Logo{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 90vw;
+    }
+
+}
+
 #header ul{
     display: flex;
     flex-direction: row; 
@@ -68,8 +86,6 @@ html{
 .nav-link a:hover{
     color: black;
     background-color: white;
-    letter-spacing: .10em;
-    border-radius: 50px;
 }
 @media only screen and (max-width: 800px) {
     .nav-link > a {
@@ -79,6 +95,19 @@ html{
         font-size: 15px;
         justify-content: center;
         align-content: flex-end; } }
+
+        @media only screen and (max-width: 280px) {
+            .nav-link > a {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                font-size: 10px;
+                justify-content: center;
+                align-content: flex-end;} 
+            
+                .nav-link a:hover{
+                    color: white;
+                    background-color: transparent;}}
 
 #logo{
     display: flex;
@@ -329,6 +358,18 @@ display: block;
         padding: 5vh;
         margin: 5px;
     }} 
+@media only screen and (max-width: 280px) {
+
+
+    #reviews{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 200vh;
+            width: 50vh;
+            margin: 10px;
+        }}
+
 
 .sign-container{
     background-image: url(./assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
