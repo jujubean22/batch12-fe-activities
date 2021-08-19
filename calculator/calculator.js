@@ -2,8 +2,8 @@ var calculator = document.getElementById("calculator")
 var div = document.createElement("div")
 var calculate = document.createElement("button")
 
-calculate.textContent = "calculate"
-calculate.setAttribute("id", "calculate")
+calculate.textContent = "Calculate"
+calculate.setAttribute("id", "Calculate")
 
 div.appendChild(calculate)
 calculator.appendChild(div)
@@ -19,7 +19,7 @@ results.setAttribute("id", "results")
 div.appendChild(results)
 calculator.appendChild(div)
 
-document.getElementById("calculate").addEventListener("click", calc);
+document.getElementById("Calculate").addEventListener("click", calc);
 function calc (){
     var a = parseInt(document.getElementById("value1").value);
     var b = parseInt(document.getElementById("value2").value);
