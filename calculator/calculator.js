@@ -4,6 +4,7 @@ var calculate = document.createElement("button")
 
 calculate.textContent = "Calculate"
 calculate.setAttribute("id", "Calculate")
+calculate.setAttribute("type", "button")
 
 div.appendChild(calculate)
 calculator.appendChild(div)
