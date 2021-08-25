@@ -9,13 +9,14 @@ html{
 #blade-video-background{
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     z-index: -2;
     opacity: .4;
     object-fit: cover;
     overflow: hidden;
     width: 100vw;
     height: 120vh;
+    image-resolution: 10dpi;
 }
 #header{
     font-family: "Fox Grotesque", sans-serif;
@@ -397,7 +398,6 @@ display: block;
     margin-bottom: 30px;
     font-family: "Trirong", sans-serif;
     text-transform: uppercase;
-    border: 10px white solid;
     width: 50vw;
     border-radius: 50px;
     color:white;
