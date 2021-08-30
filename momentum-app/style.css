@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    overflow-y: hidden;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    cursor: default;
+    transition:ease-out 1s;
+    
+}
+::-webkit-input-placeholder {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+body > div.top-row > div.top-left{
+    display: flex;
+}
+
+#google-search{
+    padding: 1vw;
+}
+
+#searchform{
+    display: none;
+}
+
+#button{
+    padding: 1px;
+    height: 5vh;
+    width: 4vw;
+    background-color: transparent;
+    font-size: .75rem;
+    border: none;
+    text-align: center;
+}
+#searchform > input{
+    width: 30vh
+}
+
+#button:hover{
+    background-color: teal;
+    transition: ease-in-out .2s;
+    opacity: 70%;
+}
+
+
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 30vw;
+    height: 5vh;
+}
+
+html{
+    background: no-repeat center center fixed;
+    background-size: cover;
+}
+
+body > div.top-row{
+    flex-direction: row; 
+   
+}
+
+body > div.top-row > div.top-left{
+    float: left;
+}
+body > div.top-row > div.top-right{
+    float: right;
+}
+
+body > div.space{
+    height: 20vh;
+}
+
+body > div.clock{
+    max-height: 50vh;
+    padding-top: 100vh;
+    font-size: 20vh;
+    font-weight: 1000;
+}
+
+body > div.greeting{
+    font-size: 5vh;
+    transition:ease-out 1s;
+}
+
+
+body > div.clock, #name,body > form, .greeting, body > div.mainfocus, body > div.above-bottom{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 1vh; 
+}
+
+body > div.center-below{ 
+    height: 15vh;
+    display: flex;
+}
+
+body > div.center-below > div.center-below-left{
+    height: 15vh;
+    width: 60vw;
+}
+
+body > div.center-below > div.center-below-right{
+    height: 45vh;
+    width: 30vw;
+    background-color: black;
+    opacity: 80%;
+    padding: 2vh;
+    border-radius: 20px;
+    display: none;
+    z-index: 10;
+    position: absolute;
+    right: 1vw;
+    bottom: 4vh;
+}
+
+#custom-qoute{
+    display: none;
+}
+
+body > div.center-below > div.center-below-right > h3{
+    text-align: center;
+    top: 10px;
+    padding: 0 0 1vh 0;
+}
+
+#ToDoinput{
+    padding: 1vh;
+    height: 5vh;
+    width: 24vw;
+    border-bottom: white 2px solid;
+}
+
+#toDoContainer > ul{
+    list-style-type: circle;
+}
+
+#toDoList > li{
+    padding: 1vh;
+    height: 5vh;
+    width: 24vw;
+    list-style-type: none;
+}
+
+#addToDo{
+    padding: 2px;
+    height: 5vh;
+    width: 5vh;
+    background-color: transparent;
+    border: oldlace solid 2px;
+}
+
+.edit{
+    padding: 1vh;
+    height: 5vh;
+    width: 21vw;
+    border-bottom: white 2px solid;
+    /* display: none; */
+}
+
+.buttons{
+    padding: 2px;
+    height: 5vh;
+    width: 5vh;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+}
+
+/* .close{
+    color:white;
+    position: absolute;
+    right: 0;
+    padding: 12px 16px 12px 16px;
+    border-radius: 5px;
+} */
+
+/* li :hover{
+    background-color: teal;
+} */
+
+body > div.bottom-left{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+body > div.bottom-right{
+    position:absolute;                 
+    bottom:1vh;                         
+    right:0;
+}

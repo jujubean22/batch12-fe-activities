@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/bg.js"></script>
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/todolist.js"></script>
+    <script defer src="./js/qoute.js"></script>
+    <script defer src="./js/greeting.js"></script>
+    <script defer src="./js/focus.js"></script>
+    <script defer src="./js/google-search.js"></script>
+    <script defer src="./js/weather.js"></script>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Gowun Batang|Comfortaa|Playfair Display ">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-row">
+        <div class="top-left">	
+            <div id="google-search">&#128270;</div>
+            <div id="search">
+            <form action="https://www.google.com/search" id="searchform" method="get" name="searchform" target="_blank">
+                <input class="form-control search" name="q" placeholder="Google Search"type="text" autocomplete="off"> 
+                <button id="button" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="top-right" id="weather"><span></span> <span></span></div>
+    </div>
+    <div class="space"></div>
+    <div class="clock">00:00:00</div>
+    <div class="greeting"></div>
+    <div id="name" action="">
+    <input
+        autocomplete="off"
+        class="name"
+        id="inputname"
+        type="text" 
+        placeholder="Write your Name"
+        required
+        maxlength="15">
+    </div>
+    
+    <div class="mainfocus">
+        <h2 class="focustext"></h2>
+        <input type="text" id="focus" placeholder="What's your focus for today?" autocomplete="off">
+    </div>
+    <div class="center-below">
+        <div class="center-below-left"></div>
+        <div class="center-below-right" id="toDoContainer">
+            <h3>ToDo List</h3>
+            <div class="todoList"></div>
+            <input type="text" placeholder="What do you want to do?" id="ToDoinput" autocomplete="off">
+            <button id="addToDo" type="submit">+</button>
+            <div id="toDoList">
+                <!-- <div id="Thingstodo">
+                code
+                <button type="button" class="buttons" id="editbtn">&#9998;</button>
+                <button class="buttons" type="button" id="deletebtn">&#215;</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="above-bottom">
+        <input type="text" placeholder="Make your own qoute" id="custom-qoute" autocomplete="off" >
+    </div>
+    <div class="bottom-left" id="quote">Quote</div>
+    <div class="bottom-right" id="todo">todo-list</div>
+</body>
+</html>
