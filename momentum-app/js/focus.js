@@ -12,9 +12,9 @@ document.getElementById("focus").addEventListener("keypress", addFocus)
         
         if (focusInput.style.display !== "none") {
             focusInput.style.display = "none";
-            } else {
+        } else {
             focusInput.style.display = "block";
-            }
+        }
 
     }
 };

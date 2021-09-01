@@ -10,4 +10,4 @@ function clockTime() {
 }
 
 clockTime();
-setInterval(clockTime);
+setInterval(clockTime, 1000);
