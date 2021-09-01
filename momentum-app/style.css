@@ -176,18 +176,19 @@ body > div.center-below > div.center-below-right > h3{
     font-size: 1.5rem;
     border: none;
 }
-
-/* .close{
+#toDoList > li{
+    padding: 12px;
+    left: 0;
+}
+.close{
     color:white;
     position: absolute;
     right: 0;
-    padding: 12px 16px 12px 16px;
+    margin: 1vh;
+    text-align: center;
+    padding: 0px 16px 12px 16px;
     border-radius: 5px;
-} */
-
-/* li :hover{
-    background-color: teal;
-} */
+}
 
 body > div.bottom-left{
     position: fixed;
@@ -200,4 +201,8 @@ body > div.bottom-right{
     position:absolute;                 
     bottom:1vh;                         
     right:0;
+}
+
+.strike{
+    text-decoration: line-through;
 }
