@@ -1,15 +1,12 @@
 // show todo on click
 const todo = document.querySelector('.center-below-right')
 const todoShow = document.querySelector('#todo')
-
-
-
 function hideShowTodo() {
-    if (todo.style.display !== "none") {
-        todo.style.display = "none";
-      } else {
-        todo.style.display = "block";
-      }
+if (todo.style.display !== "none") {
+    todo.style.display = "none";
+  } else {
+    todo.style.display = "block";
+  }
 }
 todoShow.addEventListener('click', hideShowTodo)
 
@@ -18,30 +15,44 @@ todoShow.addEventListener('click', hideShowTodo)
 let toDoList = document.getElementById('toDoList');
 let addButton = document.getElementById('addToDo');
 let inputField = document.getElementById('ToDoinput');
+let close = document.querySelectorAll(".close")
+
 
 addButton.addEventListener('click', funcToDo)
 
-// var listToDo = document.querySelectorAll("li");
-//     var i;
-//     for (i = 0; i < listToDo.length; i++) {
-//     var span = document.createElement("SPAN");
-//     var txt = document.createTextNode("\u00D7");
-//     span.className = "close";
-//     span.appendChild(txt);
-//     listToDo[i].appendChild(span);}
+function funcToDo () {
+  if (inputField.value != "") {
+    let list = document.createElement('li');
+    let span = document.createElement("span");
 
-function funcToDo(){
-    if (inputField.value != ""){
-    var list = document.createElement('li');
     list.innerText = inputField.value;
-    toDoList.appendChild(list);
     inputField.value = "";
-    list.addEventListener('click', function(){
-    list.style.textDecoration = "line-through";})
-    list.addEventListener('dblclick', function(){
-    toDoList.removeChild(list);})
-} else { 
-    alert("Input Fied is Empty")
+    span.innerHTML = "\u00D7"
+    span.className = "close";
 
-}}
+//adding the input value and closing to the list
+    list.appendChild(span);
+    toDoList.appendChild(list)
 
+
+    let close = document.querySelectorAll(".close")
+    let listItem = document.querySelectorAll("li")
+
+    elemEventListeners(
+      close,
+      listItem, 
+      close.length - 1
+    )
+  } else { 
+    alert("Input Field is Empty")
+  }
+}
+// event listeners for closing and line-through
+function elemEventListeners (close, list, index){
+  close[index].addEventListener("click", function(){
+    this.parentNode.remove() 
+  })
+  list[index].addEventListener("click", function(){
+    this.classList.toggle("strike") 
+  })
+}
