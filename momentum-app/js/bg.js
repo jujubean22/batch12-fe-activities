@@ -1,3 +1,4 @@
+//change background
 function changeBg (){
 
     const images = [

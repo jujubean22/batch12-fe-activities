@@ -20,6 +20,7 @@ let close = document.querySelectorAll(".close")
 
 addButton.addEventListener('click', funcToDo)
 
+//creating  x as closing and the new value
 function funcToDo () {
   if (inputField.value != "") {
     let list = document.createElement('li');
@@ -30,7 +31,7 @@ function funcToDo () {
     span.innerHTML = "\u00D7"
     span.className = "close";
 
-//adding the input value and closing to the list
+//adding the input value and close to the list
     list.appendChild(span);
     toDoList.appendChild(list)
 
