@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FDD2BF;
+    overflow-y: hidden;
+}
+
+.header{
+    color: #f33b3b;
+    margin: 5vh;
+    text-align: center;
+}
+
+.scoreBoard{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.score{
+    margin: 5vw;
+    color: #f33b3b;
+}
+
+.tic-container{
+    display:grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+    padding: 5vh;
+    margin:0;
+}
+
+.tic-cell{
+    width: 100px; 
+    height: 100px;
+    border: 1px solid  #f33b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* removing borders */
+.tic-cell:first-child,
+.tic-cell:nth-child(2),
+.tic-cell:nth-child(3){
+    border-top: none;
+}
+
+.tic-cell:nth-child(3n +1){
+    border-left:none
+}
+
+.tic-cell:nth-child(3n +3){
+    border-right:none
+}
+
+.tic-cell:last-child,
+.tic-cell:nth-child(8),
+.tic-cell:nth-child(7){
+    border-bottom: none;
+}
+
+
+/* X class and O class */
+.tic-cell.x,
+.tic-cell.o{
+    cursor: not-allowed;
+}
+
+ .tic-cell.x::before,
+ .tic-cell.x::after{
+    position: absolute;
+    content: " ";
+    width: calc(90px * .15);
+    height: 90px;
+    background-color:#B61919;
+ }
+
+ .tic-cell.x::before{
+     transform: rotate(45deg);
+ }
+
+ .tic-cell.x::after{
+    transform: rotate(-45deg);
+}
+
+.tic-cell.o::before,
+.tic-cell.o::after{
+   position: absolute;
+   content: " ";
+   border-radius: 50%;
+
+}
+
+.tic-cell.o::before{
+    width: 90px;
+    height: 90px; 
+    background-color: #012443;
+} 
+
+.tic-cell.o::after{
+    width: 68px;
+    height: 68px; 
+    background-color: #FDD2BF;
+} 
+ 
