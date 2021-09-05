@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 
 body{
@@ -9,20 +10,31 @@ body{
 
 .header{
     color: #f33b3b;
-    margin: 5vh;
+    margin: 3vh;
     text-align: center;
+    font-size: 3rem;
 }
 
 .scoreBoard{
     display: flex;
     width: 100%;
+    height: 10vh;
     align-items: center;
     justify-content: center;
 }
 
 .score{
     margin: 5vw;
+    font-size: 3rem;
     color: #f33b3b;
+}
+
+#Xscore{
+    color:#B61919
+}
+
+#Oscore{
+    color: #012443;
 }
 
 .tic-container{
@@ -38,8 +50,8 @@ body{
 }
 
 .tic-cell{
-    width: 100px; 
-    height: 100px;
+    width: 150px; 
+    height: 150px;
     border: 1px solid  #f33b3b;
     display: flex;
     justify-content: center;
@@ -136,18 +148,40 @@ body{
 } 
 
 .winning-message{
+    height: 50vh;
+    width: 50vw;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 25%;
+    left: 25%;
     right: 0;
     bottom: 0;
-    background-color: rgba(1, 36, 67, .5);
-    display: flex;
+    background-color: rgba(1, 36, 67, .9);
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #eca282;
     font-size: 5rem;
+    flex-direction: column;
+    display: none;
 }
 
-.restart
+.winning-message.show{
+    display: flex;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.restart,
+.previous,
+.next{
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    background-color: #eca282;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
  
