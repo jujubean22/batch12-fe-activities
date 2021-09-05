@@ -70,46 +70,84 @@ body{
 }
 
 
-/* X class and O class */
+/* X class, O class and added board hover effect */
 .tic-cell.x,
 .tic-cell.o{
     cursor: not-allowed;
 }
 
+.tic-cell.x::before,
+.tic-cell.x::after{
+    background-color:#B61919 ;
+ }
+
+.tic-cell.o::before{
+    background-color: #012443 !important;
+ }
+
+
+.tic-container.x .tic-cell:not(.x):not(.o):hover::before,
+.tic-container.x .tic-cell:not(.x):not(.o):hover::after{
+    background-color: #af6767;
+}
+
  .tic-cell.x::before,
- .tic-cell.x::after{
+ .tic-cell.x::after,
+ .tic-container.x .tic-cell:not(.x):not(.o):hover::before,
+ .tic-container.x .tic-cell:not(.x):not(.o):hover::after{
     position: absolute;
     content: " ";
     width: calc(90px * .15);
     height: 90px;
-    background-color:#B61919;
  }
 
- .tic-cell.x::before{
+ .tic-cell.x::before,
+ .tic-container.x .tic-cell:not(.x):not(.o):hover::before{
      transform: rotate(45deg);
  }
 
- .tic-cell.x::after{
+ .tic-cell.x::after,
+ .tic-container.x .tic-cell:not(.x):not(.o):hover::after{
     transform: rotate(-45deg);
 }
 
 .tic-cell.o::before,
-.tic-cell.o::after{
+.tic-cell.o::after,
+.tic-container.o .tic-cell:not(.x):not(.o):hover::before,
+.tic-container.o .tic-cell:not(.x):not(.o):hover::after{
    position: absolute;
    content: " ";
    border-radius: 50%;
 
 }
 
-.tic-cell.o::before{
+.tic-cell.o::before,
+.tic-container.o .tic-cell:not(.x):not(.o):hover::before{
     width: 90px;
     height: 90px; 
-    background-color: #012443;
+    background-color: #4b657c;
 } 
 
-.tic-cell.o::after{
+.tic-cell.o::after,
+.tic-container.o .tic-cell:not(.x):not(.o):hover::after{
     width: 68px;
     height: 68px; 
     background-color: #FDD2BF;
 } 
+
+.winning-message{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 36, 67, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+}
+
+.restart
  
