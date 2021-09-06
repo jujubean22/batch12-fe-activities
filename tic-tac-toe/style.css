@@ -1,18 +1,19 @@
 *{
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: "Lobster", sans-serif;
 }
 
 body{
-    background-color: #FDD2BF;
+    background-image: url(https://flevix.com/wp-content/uploads/2021/05/Bubble-Background.svg);
     overflow-y: hidden;
 }
 
 .header{
-    color: #f33b3b;
+    color: #90d145;
     margin: 3vh;
     text-align: center;
     font-size: 3rem;
+    letter-spacing: 1vw;
 }
 
 .scoreBoard{
@@ -26,15 +27,15 @@ body{
 .score{
     margin: 5vw;
     font-size: 3rem;
-    color: #f33b3b;
+    color: #90d145;
 }
 
 #Xscore{
-    color:#B61919
+    color:#db7a7a;
 }
 
 #Oscore{
-    color: #012443;
+    color: #1961a0 ;
 }
 
 .tic-container{
@@ -87,20 +88,20 @@ body{
 .tic-cell.o{
     cursor: not-allowed;
 }
-
+/* x mark */
 .tic-cell.x::before,
 .tic-cell.x::after{
-    background-color:#B61919 ;
+    background-color:#db7a7a ;
  }
-
+/* o mark outside */
 .tic-cell.o::before{
-    background-color: #012443 !important;
+    background-color: #1961a0 !important;
  }
 
-
+/* x mark hover*/
 .tic-container.x .tic-cell:not(.x):not(.o):hover::before,
 .tic-container.x .tic-cell:not(.x):not(.o):hover::after{
-    background-color: #af6767;
+    background-color: rgb(207, 205, 205);
 }
 
  .tic-cell.x::before,
@@ -132,19 +133,19 @@ body{
    border-radius: 50%;
 
 }
-
+/* hover effect of o outside line */
 .tic-cell.o::before,
 .tic-container.o .tic-cell:not(.x):not(.o):hover::before{
     width: 90px;
     height: 90px; 
     background-color: #4b657c;
 } 
-
+/* inside of o */
 .tic-cell.o::after,
 .tic-container.o .tic-cell:not(.x):not(.o):hover::after{
     width: 68px;
     height: 68px; 
-    background-color: #FDD2BF;
+    background-color: #230F47;
 } 
 
 .winning-message{
@@ -158,7 +159,7 @@ body{
     background-color: rgba(1, 36, 67, .9);
     justify-content: center;
     align-items: center;
-    color: #eca282;
+    color: #90d145;
     font-size: 5rem;
     flex-direction: column;
     display: none;
@@ -177,9 +178,9 @@ body{
 .restart,
 .previous,
 .next{
-    font-family: "Raleway", sans-serif;
+    font-family: "Lobster", sans-serif;
     font-size: 2rem;
-    background-color: #eca282;
+    background-color: #90d145;
     margin-left: 2vh;
     margin-right: 2vh;
 }
