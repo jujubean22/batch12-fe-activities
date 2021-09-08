@@ -109,18 +109,24 @@ function storeMove(ticCells){
     })
     moves.push([arr1, arr2, arr3])
     placement = moves.length - 1
-    console.log(moves[moves.length - 1])
 }
 function undoMove() {
+    redoBtn.disabled = false
     if (placement > 0){
         placement -= 1
         loadTiles (placement)
-    }   
+    }
+    if (placement === 0) {
+        undoBtn.disabled = true
+    }
 }
 function redoMove (){
+    undoBtn.disabled = false
     if (placement >= 0 && placement < moves.length - 1){
         placement +=1 
         loadTiles (placement)
+    }if (placement === moves.length - 1){
+        redoBtn.disabled = true
     }
 }
 //iterate thru the 2d array from moves variable to get the specific value and add it as classlist to divs
