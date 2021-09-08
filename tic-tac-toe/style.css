@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    font-family: "Lobster", sans-serif;
+    font-family: "Rampart One", sans-serif;
+    cursor: default;
 }
 
 body{
@@ -8,7 +9,44 @@ body{
     overflow-y: hidden;
 }
 
-.header{
+.choosePlayerPrompt{
+    height: 63vh;
+    width: 50vw;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 36, 67, .9);
+    justify-content: center;
+    align-items: center;
+    color: #90d145;
+    font-size: 5rem;
+    flex-direction: column;
+    border-radius: 100px;
+    display: flex;
+    z-index: 2;
+}
+
+.choose-player{
+    font-size: 5rem;
+    display: flex;
+}
+
+.choose{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: #90d145;
+}
+
+#xp{
+    border-right: #d86060 solid 3px;
+}
+
+.header,
+h1{
     color: #90d145;
     margin: 3vh;
     text-align: center;
@@ -162,27 +200,51 @@ body{
     color: #90d145;
     font-size: 5rem;
     flex-direction: column;
+    border-radius: 100px;
     display: none;
 }
 
 .winning-message.show{
     display: flex;
-
 }
 
+.winning-message-text{
+    padding-bottom: 5vh;
+    letter-spacing: 1vw;
+    text-align: center;
+}
+
+.mainButtons,
 .buttons{
     display: flex;
     justify-content: center;
 }
 
-.restart,
-.previous,
-.next{
-    font-family: "Lobster", sans-serif;
-    font-size: 2rem;
-    background-color: #90d145;
-    margin-left: 2vh;
-    margin-right: 2vh;
+.mainButtons.hidden{
+    display: none;
 }
 
- 
+.close,
+.restart,
+#previous,
+.reset,
+#next{
+    font-family: "Rampart One", sans-serif;
+    font-size: 1.5rem;
+    background-color: #90d145;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    border-radius: 30px;
+    color: black;
+}
+#next.hide,
+#previous.hide{
+    display:none;
+} 
+
+.close{
+    align-self: flex-end;
+    right: 0;
+    top: 0;
+    left: 100px;
+}

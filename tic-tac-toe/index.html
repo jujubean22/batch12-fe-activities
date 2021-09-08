@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Raleway|Comfortaa|Lobster ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Rampart One|Comfortaa|Lobster ">
+    <link rel="shortcut icon" href="#">
     <script defer src="./js/main.js"></script>    
     <link rel="stylesheet" href="./style.css">
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
-
+    <div class="choosePlayerPrompt">
+        <h1>Choose a Player</h1>
+        <div class="choose-player">
+            <div class="choose" id="xp">X</div>
+            <div class="choose" id="op">O</div>
+        </div>
+    </div>
     <h1 class="header">TIC-TAC-TOE</h1>
     <div class="scoreBoard">
     <h3 class="score">X = <span id="Xscore"></span></h3>
@@ -27,13 +34,18 @@
         <div class="tic-cell" id="7"></div>
         <div class="tic-cell" id="8"></div>
     </div>
-    <div class="buttons">
-        <button class="previous">Previous</button>
-        <button class="next">Next</button>
+    <div class="mainButtons hidden">
+        <button id="previous" class="">Undo</button>
+        <button class="reset" onClick="window.location.reload();">Reset All</button>
+        <button id="next" class="">Redo</button>
     </div>
     <div class="winning-message">
+        <button class="close">&#215;</button>
         <div class="winning-message-text"></div>
-        <button class="restart">Restart</button>
+            <button class="restart">Restart</button>
+        <div class="buttons"> 
+            
+        </div>
     </div>
 </body>
 </html>
