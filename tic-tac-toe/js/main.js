@@ -35,8 +35,7 @@ let oTurn = null
 let placement = null
 let moves = []
 
-
-
+//choosing player prompt
 choose.forEach(chooseNow => {
     chooseNow.addEventListener('click', () => {
         if (chooseNow.id === 'xp'){
@@ -52,15 +51,16 @@ choose.forEach(chooseNow => {
 
 startGame()
 
-restart.addEventListener('click', startGame) // restart game when restart button is clicked
+restart.addEventListener('click', startGame)
 undoBtn.addEventListener('click', undoMove)
 redoBtn.addEventListener('click', redoMove)
 
+//restart the game
 function startGame() {
     oTurn = false
     ticCells.forEach(cell => {
-        cell.classList.remove(Xclass)//remove moves when restart is clicked
-        cell.classList.remove(Oclass)//remove moves when restart is clicked
+        cell.classList.remove(Xclass)
+        cell.classList.remove(Oclass)
         cell.addEventListener('click', cellClick, {once: true})
     })
     setHover()
@@ -110,27 +110,22 @@ function storeMove(ticCells){
     moves.push([arr1, arr2, arr3])
     placement = moves.length - 1
     console.log(moves[moves.length - 1])
-
 }
-
 function undoMove() {
     if (placement > 0){
         placement -= 1
         loadTiles (placement)
-    } 
-    
+    }   
 }
-
 function redoMove (){
     if (placement >= 0 && placement < moves.length - 1){
         placement +=1 
         loadTiles (placement)
     }
 }
-
+//iterate thru the 2d array from moves variable to get the specific value and add it as classlist to divs
 function loadTiles(index) {
     board.innerHTML = ''
-
     for (let i = 0; i < moves[index].length; i++) {
         for (let j = 0; j < moves[index][i].length; j++){
             let div = document.createElement('div')
@@ -139,15 +134,14 @@ function loadTiles(index) {
                 } else  if (moves[index][i][j] == 'o'){
                     div.classList.add('o')
                 } else {
-
                 }
-            
             div.classList.add('tic-cell')       
             board.appendChild(div)
         }   
     }   
 }
 
+//this will update the score, call the winning msg to show up, and remove the listeners on each cell when the game is done
 function endGame (draw){
     if (draw){
         winningMessage.innerText = `It's a Draw`
@@ -170,12 +164,10 @@ function endGame (draw){
         cell.removeEventListener('click', cellClick)
     })
 }
-
-
-
 function putMark(cell,currentClass){
     cell.classList.add(currentClass)
 }
+
 function changeTurn(){
     oTurn = !oTurn
 }
@@ -188,7 +180,6 @@ function setHover(){
         board.classList.add(Xclass)
     }
 }
-
 function checkWin (currentClass){
     storeMove(cells)
     return winningCombo.some(combo => {
@@ -197,15 +188,12 @@ function checkWin (currentClass){
         })
     }) 
 } 
-
-
 //draw function
 function isDraw(){
     return [...ticCells].every(cell => {
         return cell.classList.contains(Xclass) || cell.classList.contains(Oclass)
     })
 }
-
 closeBtn.addEventListener('click', closing = () => {
     winningMessageContainer.style.display  = 'none'
     mainButtons.classList.remove('hidden')
