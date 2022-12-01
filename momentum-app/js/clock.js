@@ -1,6 +1,7 @@
 const clock = document.querySelector(".clock");
 
 function clockTime() {
+    
     const date = new Date();
     let hours = String(date.getHours());
     hours = (hours % 12) || 12;
